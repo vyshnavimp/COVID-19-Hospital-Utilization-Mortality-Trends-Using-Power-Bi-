@@ -1,0 +1,15 @@
+Field Name,Table Name,Data Type,Description
+count,Fact_Utilization,Integer,Number of patient encounters
+facility_name,Fact_Utilization,Text,Name of hospital/facility
+setting,Fact_Utilization,Text,"Care setting (e.g., Inpatient, ER)"
+date_parsed,Fact_Utilization,Date,Encounter date
+category,Mortality_By_Category,Text,Health condition category
+count,Mortality_By_Category,Integer,Death count for the condition
+Date,Dim_Date,Date,Calendar date
+Year,Dim_Date,Integer,Year extracted from date
+Month,Dim_Date,Text,Full month name
+Quarter,Dim_Date,Text,"Quarter label (e.g., Q1)"
+Mortality Rate (%),DAX Measure,Percentage,Deaths ÷ Visits × 100
+Total Visits,DAX Measure,Integer,Sum of all visits
+YoY Encounter Growth (%),DAX Measure,Percentage,Visit growth over previous year
+Max Visits by a Hospital,DAX Measure,Integer,Max number of visits by any hospital
